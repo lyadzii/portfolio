@@ -86,6 +86,7 @@ html{
 .home .github-link , .linkedin-link{
     background-color: crimson;
     color:white;
+    border:none;
     border-radius: 5px;
     font-size: 16px;
     padding :8px;
