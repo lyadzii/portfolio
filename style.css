@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*similar classes*/
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    margin-bottom: 30px;
+
+}
+
+.about, .skill, .contact{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    background-color: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    /* z-index: 1; */
+}
+.webname{
+    font-size: 30px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbutton > button{
+    border: none;
+    background: inherit;
+    color: white;
+    font-size: 18px;
+    padding-right: 20px;
+}
+/* .navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+} */
+.home{
+    height: 100vh;
+}
+.home > div{
+    padding-top:43vh;
+    color:white;
+    font-size: 30px;
+}
+.home > div > .name{
+    font-size: 70px;
+}
+.home > img{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    min-width: 1300px;
+    height: 100vh;
+    z-index: -1;
+}
+.home .github-link , .linkedin-link{
+    background-color: crimson;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+    padding :8px;
+    width:130px;
+    margin-top:20px;
+}
+/* about */
+.about{
+    background-color: white;
+    padding:50px 0;
+}
+.about-all, .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title{
+    width:100%;
+}
+.about-content .left{
+    width: 45%;
+}
+.about-content .right{
+    width:55%;
+}
+.about-content .left > img{
+    width: 400px;
+    height:400px;
+    border-radius: 6px;
+}
+.about-content .right h3{
+    font-size: 20px;
+    font-family: cursive;
+}
+.about-content .right div{
+    font-size: 1em;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.about-content .right button{
+    border:none;
+    background-color:crimson;
+    color:white;
+    padding:10px 15px;
+    font-size: 1.3em;
+}
+/* skill */
+.skill-all, .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill{
+    background-color: rgb(39, 37, 37);
+    color:white;
+    padding-top:60px;
+    padding-bottom:40px;
+}
+.skill-content .left{
+    width: 45%;
+}
+.skill-content .right{
+    width:55%;
+}
+.skill .left{
+    padding-right: 20px;
+}
+.skill.content .left h3{
+    font-size: 25px;
+}
+.skill-content .left div{
+    font-size: 1em;
+    margin: 15px 0;
+}
+.skill-content .left button{
+    border:none;
+    background-color: crimson;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:white;
+}
+.bars {
+    padding: 10px 10px;
+}
+.bars .info {
+    display: flex;
+    justify-content: space-between;
+}
+.bars .line{
+    width:100%;
+    height:5px;
+}
+.bars .html{
+    background:linear-gradient(to right, crimson 70%, rgb(156, 151, 151) 50%);
+}
+.bars .css{
+    background:linear-gradient(to right, crimson 60%, rgb(156, 151, 151) 50%);
+}
+.bars .js{
+    background:linear-gradient(to right, crimson 70%, rgb(156, 151, 151) 50%);
+}
+.bars .java{
+    background:linear-gradient(to right, crimson 80%, rgb(156, 151, 151) 50%);
+}
+.bars .mysql{
+    background:linear-gradient(to right, crimson 75%, rgb(156, 151, 151) 50%);
+}
+
+/* project */
+.project{
+    background-color: rgb(255, 255, 255);
+    height:80vh;
+    padding-top:50px;
+    padding-bottom: 50px; 
+}
+.project-all .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-all{
+    height: 100%;
+}
+.project-scroll{
+    background-color: rgb(218, 207, 207);
+    height:calc(80vh - 200px);
+    overflow: scroll;
+    overflow-x:hidden ;
+    border-radius: 5px;
+}
+.project-content .projects{
+    width:46%;
+    border-radius: 5px;
+    background-color: white;
+    margin:10px 10px;
+    padding:5px;
+    padding-bottom: 15px;
+}
+.projects img{
+    width:100%;
+    height: 40%;
+    border-radius: 5px;
+}
+.projects .project-description{
+    font-size: 1em;
+    padding: 15px 5px;
+}
+.projects .project-title{
+    color: crimson;
+    margin-left:7px;
+    margin-top: 10px;
+}
+.projects .github-link{
+    text-align: center;
+}
+.projects .github-link button{
+    border:1px solid rgb(202, 194, 194);
+    border-radius: 5px;
+    background-color: inherit;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width:80%;
+    font-size: 1.1em;
+}
+/* contact */
+.contact{
+    background-color: rgb(39, 37, 37);
+    color:white;
+    padding: 50px 0;
+}
+
+.contact-all .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-all .title{
+    width:100%;
+    margin:30px auto;
+}
+.contact-content .left{
+    width:50%;
+    padding-right: 20px;
+}
+.contact-content .right{
+    width:50%;
+    padding-left:20px;
+}
+.contact-content .left .icons .row{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.contact-content .left .icons .row i{
+    font-size: 1.4em;
+    width:40px;
+}
+.contact-content .left h3{
+    margin-bottom: 15px;
+}
+.contact-content .content-message{
+    font-size: 0.9em;
+}
+.contact-content .left .icons .row .value{
+    font-size: 0.8em;
+}
+
+.contact-content .right form{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+}
+.contact-content .right form .contact-detial{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-content .right .field{
+    width:100%;
+}
+
+.contact-detial .name{
+    width:48.5%;
+}
+.contact-detial .email{
+    width:48.5%;
+}
+
+.contact-content .right form input{
+    width:100%;
+    height:40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border:none;
+    border:1px solid rgb(204, 197, 197);
+}
+.contact-content .right form textarea{
+    width:100%;
+    height:70px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border:1px solid rgb(201, 196, 196);
+}
+
+.contact-content .form-button{
+    border:1px solid crimson;
+    border-radius: 5px;
+    width:150px;
+    height:45px;
+    font-size: 1.1em;
+    color:white;
+    background-color: crimson;
+}
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+    .home > div > .name{
+        font-size: 60px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }   
+    .about .about-content .left{
+        /* display: flex;
+        justify-content: center;
+        margin:0 auto 60px; */
+        text-align: center;
+    }
+    .skill .skill-content .column{
+        width:100%;
+    }
+}
+@media (max-width:800px){
+    .home > div > .name{
+        font-size: 50px;
+    }
+    .project .projects{
+        width:100%;
+        max-width: 500px;
+    }
+    .contact .contact-content .column{
+        width:100%;
+    }
+    .contact .contact-content .left{
+        margin-bottom: 50px;
+    }
+    .contact .contact-content .right{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 690px){
+    .home .max-width {
+        font-size:1.5em;
+    }
+    .home > div > .name{
+        font-size: 45px;
+    }
+    .max-width{
+        padding: 0 23px;
+    }
+}
+@media (max-width: 500px){
+    .home .max-width {
+        font-size:1.3em;
+    }
+
+    .home > div > .name{
+        font-size: 37px;
+    }
+}
